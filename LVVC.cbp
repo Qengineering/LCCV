@@ -29,10 +29,17 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wextra" />
 			<Add option="-Wall" />
 			<Add option="-std=gnu++17" />
 			<Add option="-fexceptions" />
 			<Add option="-pthread" />
+			<Add option="-ftree-vectorize" />
+			<Add option="-Wno-unused-parameter" />
+			<Add option="-faligned-new" />
+			<Add option="-Werror" />
+			<Add option="-Wfatal-errors" />
 			<Add directory="/usr/local/include/opencv4" />
 			<Add directory="include" />
 			<Add directory="/usr/include/libcamera" />
