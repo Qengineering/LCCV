@@ -26,19 +26,20 @@ $ rm master.zip <br/>
 $ rm LICENSE <br/>
 $ rm README.md <br/> <br/>
 Your *MyDir* folder must now look like this: <br/> 
-. <br/>
-├── example <br/>
-│   ├── takephoto.cpp <br/>
-│   └── takevideo.cpp <br/>
-├── include <br/>
-│   ├── lccv.hpp <br/>
-│   ├── libcamera_app.hpp <br/>
-│   └── libcamera_app_options.hpp <br/>
-├── LVVC.cbp <br/>
-└── src <br/>
-    ├── lccv.cpp <br/>
-    ├── libcamera_app.cpp <br/>
-    └── libcamera_app_options.cpp <br/>
+```
+├── example
+│   ├── takephoto.cpp
+│   └── takevideo.cpp 
+├── include
+│   ├── lccv.hpp
+│   ├── libcamera_app.hpp
+│   └── libcamera_app_options.hpp
+├── LVVC.cbp
+└── src 
+    ├── lccv.cpp
+    ├── libcamera_app.cpp 
+    └── libcamera_app_options.cpp 
+```
 
 ------------
 
@@ -49,7 +50,7 @@ Many thanks to [kbarni](https://github.com/kbarni) for this hard work on the ori
 
 ------------
 
-## Extract of _kbarni_ original readme.
+## Extract of [_kbarni_](https://github.com/kbarni) original readme.
 
 LibCamera bindings for OpenCV
 
