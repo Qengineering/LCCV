@@ -1,16 +1,67 @@
+# Libcamera API wrapper for OpenCV RPi Bullseye 64OS
+![output image]( https://qengineering.eu/images/CameraWall.webp )<br/>
+## Libcamera C++ API wrapper for OpenCV on a Raspberry Pi 4 with 64-bit Bullseye OS
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
+In the new Debian 11, Bullseye, you have libcamera as the default camera stack. This C++ code is a example on how to conect the libcamera API in OpenCV. It requires less CPU-resources compared to GStreamer.<br/>
+
+------------
+
+## Dependencies.<br/>
+To run the application, you have to:
+- A Raspberry Pi 4. 
+- OpenCV 64 bit installed. [Install OpenCV 4.5](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html) <br/>
+- Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
+- A working Raspicam
+
+------------
+
+## Installing the app.
+To extract and run the app in Code::Blocks <br/>
+$ mkdir *MyDir* <br/>
+$ cd *MyDir* <br/>
+$ wget https://github.com/Qengineering/Libcamera-OpenCV-RPi-Bullseye-64OS/archive/refs/heads/main.zip <br/>
+$ unzip -j master.zip <br/>
+Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
+$ rm master.zip <br/>
+$ rm LICENSE <br/>
+$ rm README.md <br/> <br/>
+Your *MyDir* folder must now look like this: <br/> 
+. <br/>
+├── example <br/>
+│   ├── takephoto.cpp <br/>
+│   └── takevideo.cpp <br/>
+├── include <br/>
+│   ├── lccv.hpp <br/>
+│   ├── libcamera_app.hpp <br/>
+│   └── libcamera_app_options.hpp <br/>
+├── LVVC.cbp <br/>
+└── src <br/>
+    ├── lccv.cpp <br/>
+    ├── libcamera_app.cpp <br/>
+    └── libcamera_app_options.cpp <br/>
+
+------------
+
+## Running the app.
+To run the application load the project file LCCV.cbp in Code::Blocks.<br/> 
+
+Many thanks to [kbarni](https://github.com/kbarni) for this hard work on the original repo!<br/><br/>
+
+------------
+
+## Extract of _kbarni_ original readme.
+
 LibCamera bindings for OpenCV
 
 LCCV (*LibCamera bindings for OpenCV*) is a small wrapper library that provides access to the Raspberry Pi camera in OpenCV.
 
-### IMPORTANT WARNING: 
+IMPORTANT WARNING: 
 
-***This is a very early version, so expect to have several bugs.***
+*This is a very early version, so expect to have several bugs.*<br/>
+*Note that the API still might have some changes!*<br/>
+*Please help with the development by reporting the bugs and issues you encounter, committing bugfixes, and proposing ideas!*<br/>
 
-***Note that the API still might have some changes!***
-
-***Please help with the development by reporting the bugs and issues you encounter, committing bugfixes, and proposing ideas!***
-
-Context
+### Context
 
 -------
 
@@ -27,23 +78,3 @@ Features and limitations
 ------------------------
 
 LCCV is heavily based on Raspbian's `libcamera-apps` source code. It is aimed to offer full control over the camera, so the original options class was kept instead of a new one based on OpenCV's VideoCapture class. Note that only the camera parameters are available, other parameters and functions, like previewing, cropping and post-processing were stripped from the library.
-
-Prerequisites
-
--------------
-
-- Raspbian Bullseye
-- Development libraries (gcc/clang, cmake, git)
-- libcamera (with development packages)
-- OpenCV (with development packages)
-
-Install everything using the following command:
-
-    sudo apt install build-essential cmake git libcamera-dev 
-
-
-License
-
--------
-
-The source code is made available under the simplified [BSD 2-Clause license](https://spdx.org/licenses/BSD-2-Clause.html).
