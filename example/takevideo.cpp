@@ -11,7 +11,7 @@ int main()
     cam.options->video_height=768;
     cam.options->framerate=5;
     cam.options->verbose=true;
-    cv::namedWindow("Video",cv::WINDOW_NORMAL);
+    
     cam.startVideo();
     int ch=0;
     while(ch!=27){
