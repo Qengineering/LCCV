@@ -10,7 +10,7 @@ int main()
     cam.options->photo_width=2028;
     cam.options->photo_height=1520;
     cam.options->verbose=true;
-    cv::namedWindow("Image",cv::WINDOW_NORMAL);
+    
     for(int i=0;i<100;i++){
         std::cout<<i<<std::endl;
         if(!cam.capturePhoto(image)){
