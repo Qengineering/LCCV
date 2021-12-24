@@ -46,6 +46,22 @@ Your *MyDir* folder must now look like this: <br/>
 ## Running the app.
 To run the application load the project file LCCV.cbp in Code::Blocks.<br/> 
 
+A remark. The main loop looks somewhat quirky with its if-else.<br/>
+```
+    int ch=0;
+    while(ch!=27){
+        if(!cam.getVideoFrame(image,1000)){
+            std::cout<<"Timeout error"<<std::endl;
+        }
+        else{
+            cv::imshow("Video",image);
+            ch=cv::waitKey(10);
+        }
+    }
+```
+It is necessary because frames are discarded during the first startup of the camera, which exceeds the timeout limit of 1 sec.<br/><br/>
+![output image]( https://qengineering.eu/images/LCCVtime.png )<br/>
+
 Many thanks to [kbarni](https://github.com/kbarni) for this hard work on the original repo!<br/><br/>
 
 ------------
