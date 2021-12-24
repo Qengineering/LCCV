@@ -46,7 +46,7 @@ Your *MyDir* folder must now look like this: <br/>
 ## Running the app.
 To run the application load the project file LCCV.cbp in Code::Blocks.<br/> 
 
-A remark. The main loop looks somewhat quirky with its if-else.<br/>
+A remark. The main loop looks somewhat odd with its if-else statements, where a break is usually applied when a frame is missed.<br/>
 ```
     int ch=0;
     while(ch!=27){
