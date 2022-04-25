@@ -9,6 +9,7 @@ In the new Debian 11, Bullseye, you have libcamera as the default camera stack. 
 ## Dependencies.<br/>
 To run the application, you have to:
 - A Raspberry Pi 4. 
+- Raspbian's libcamera-apps source code installed (```sudo apt install libcamera-dev```)
 - OpenCV 64 bit installed. [Install OpenCV 4.5](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html) <br/>
 - Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
 - A working Raspicam
