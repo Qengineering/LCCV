@@ -4,6 +4,17 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
 In the new Debian 11, Bullseye, you have libcamera as the default camera stack. This C++ code is a example on how to conect the libcamera API in OpenCV. It requires less CPU-resources compared to GStreamer.<br/>
 
+| Size | FPS | Gstreamer | LCCV |
+| ---- | :-----:  | :-----:  | :-----:  |
+| 640 X 480 | 15 | 24% | **10%** |
+| 640 X 480 | 30 | 25% | **17%** |
+| 1024 x 768 | 15 | 41% | **16%** |
+| 1280 x 960 | 15 | 42% | **18%** |
+| 2592 x 1944 | 15 | 50% | **48%** |
+| 3280 x 2464 | 15 |  - | **51%** |
+
+A time consuming process can be a full size preview on the screen, especially at high resolutions.
+
 ------------
 
 ## Dependencies.<br/>
