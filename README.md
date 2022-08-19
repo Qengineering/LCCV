@@ -31,7 +31,7 @@ To run the application, you have to:
 To extract and run the app in Code::Blocks <br/>
 $ mkdir *MyDir* <br/>
 $ cd *MyDir* <br/>
-$ wget https://github.com/Qengineering/Libcamera-OpenCV-RPi-Bullseye-64OS/archive/refs/heads/main.zip <br/>
+$ wget https://github.com/Qengineering/LCCV/archive/refs/heads/main.zip <br/>
 $ unzip -j master.zip <br/>
 Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
 $ rm main.zip <br/>
