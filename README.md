@@ -34,7 +34,7 @@ $ cd *MyDir* <br/>
 $ wget https://github.com/Qengineering/Libcamera-OpenCV-RPi-Bullseye-64OS/archive/refs/heads/main.zip <br/>
 $ unzip -j master.zip <br/>
 Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
-$ rm master.zip <br/>
+$ rm main.zip <br/>
 $ rm LICENSE <br/>
 $ rm README.md <br/> <br/>
 Your *MyDir* folder must now look like this: <br/> 
